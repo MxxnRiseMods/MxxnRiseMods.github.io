@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - MxxnRise Mods</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="gradient-header">
+    <h1>Admin Panel</h1>
+    <p>Add and manage mods for the website.</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Add a New Mod</h2>
+      <form id="addModForm">
+        <label for="modName">Mod Name:</label>
+        <input type="text" id="modName" placeholder="Enter mod name" required>
+
+        <label for="modDescription">Description:</label>
+        <textarea id="modDescription" placeholder="Enter mod description" required></textarea>
+
+        <label for="modFile">Upload Mod (.jar):</label>
+        <input type="file" id="modFile" accept=".jar" required>
+
+        <button type="submit">Add Mod</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
